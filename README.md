@@ -15,7 +15,7 @@ scene {
 }
 ```
 
-the above locus scene can be compiled to a threejs scene using rust executable project inside `/compiler` directory
+the above locus scene can be compiled to a threejs scene using locus compiler project inside `/compiler` directory
 
 ```
 ./compiler scene.ls -o scene.js
