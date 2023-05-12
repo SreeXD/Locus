@@ -1,0 +1,25 @@
+{
+  "name": "locus-language-support",
+  "displayName": "locus language support",
+  "description": "language support extension for locus scene specification language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "locus",
+      "aliases": ["locus", "locus"],
+      "extensions": [".ls"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "locus",
+      "scopeName": "source.locus",
+      "path": "./syntaxes/locus.tmLanguage.json"
+    }]
+  }
+}

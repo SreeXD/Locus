@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "locus",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.locus",
+				"match": "\\b(scene|mesh)\\b"
+			}]
+		},
+		"numbers": {
+			"name": "constant.numeric.locus",
+			"match": "\\b[0-9]+(\\.[0-9]*)?([eE][0-9]*)?\\b"
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.locus",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.locus",
+					"begin": "'",
+					"end": "'"
+				}
+			]
+		}
+	},
+	"scopeName": "source.locus"
+}
